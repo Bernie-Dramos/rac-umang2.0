@@ -19,7 +19,7 @@ export default function ContactPage() {
   })
   const [isSubmitted, setIsSubmitted] = useState(false)
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setFormData((prev) => ({
       ...prev,
@@ -27,7 +27,7 @@ export default function ContactPage() {
     }))
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsSubmitted(true)
     // Reset form after 3 seconds
@@ -48,7 +48,7 @@ export default function ContactPage() {
       icon: Phone,
       title: { en: "Phone" },
       value: "+91 12345 67890",
-      description: { pt: "Ligue para nós", en: "Give us a call" },
+      description: { en: "Give us a call" },
     },
     {
       icon: MapPin,

@@ -116,10 +116,10 @@ const galleryImages = [
 ]
 
 const categories = [
-  { pt: "Todos", en: "All" },
-  { pt: "Projetos", en: "Projects" },
-  { pt: "Eventos", en: "Events" },
-  { pt: "Reuniões", en: "Meetings" },
+  { en: "All" },
+  { en: "Projects" },
+  { en: "Events" },
+  { en: "Meetings" },
 ]
 
 export default function GalleryPage() {
@@ -127,7 +127,7 @@ export default function GalleryPage() {
   const [selectedImage, setSelectedImage] = useState(null)
 
   const filteredImages =
-    selectedCategory.pt === "Todos"
+    selectedCategory.en === "All"
       ? galleryImages
       : galleryImages.filter((image) => image.category === selectedCategory.en)
 
@@ -152,9 +152,9 @@ export default function GalleryPage() {
             {categories.map((category, index) => (
               <Button
                 key={index}
-                variant={selectedCategory.pt === category.pt ? "default" : "outline"}
+                variant={selectedCategory.en === category.en ? "default" : "outline"}
                 className={`${
-                  selectedCategory.pt === category.pt
+                  selectedCategory.en === category.en
                     ? "bg-navy-900 text-white"
                     : "border-navy-900 text-navy-900 hover:bg-navy-900 hover:text-white"
                 }`}
