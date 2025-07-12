@@ -42,10 +42,10 @@ const featuredProjects = [
 ]
 
 const stats = [
-  { number: 500, label: "Members Impacted", icon: Users },
+  { number: 150, label: "Members Impacted", icon: Users },
   { number: 50, label: "Projects Completed", icon: Target },
-  { number: 10000, label: "Lives Touched", icon: Heart },
-  { number: 15, label: "Communities Served", icon: Globe },
+  { number: 500, label: "Lives Touched", icon: Heart },
+  { number: 5, label: "Communities Served", icon: Globe },
 ]
 
 export default function HomePage() {
