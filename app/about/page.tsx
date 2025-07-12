@@ -91,24 +91,38 @@ const leadership = [
 
 const generalBodyMembers = [
   {
-    name: "Paulo Macamo",
+    name: "Paulo Mathayo",
     image: "/images/paulo.jpg",
-    description: "Active member contributing to technology initiatives",
+    description: "Active member and contributing to initiatives",
   },
+  {
+    name: "Ibrahim Auwal",
+    image: "/placeholder.svg?height=200&width=200",
+    description: "Active member and contributing to initiatives",
+  },
+  {
+    name: "Aditya",
+    image: "/placeholder.svg?height=200&width=200",
+    description: "Active member and contributing to initiatives",
+  },
+  {
+    name: "Jerry",
+    image: "/placeholder.svg?height=200&width=200",
+    description: "Active member and contributing to initiatives",
+  },
+  
 ]
 
 const values = [
   {
-    title: { pt: "Serviço", en: "Service" },
+    title: { en: "Service" },
     description: {
-      pt: "Dedicamos nosso tempo e energia para servir nossa comunidade",
       en: "We dedicate our time and energy to serve our community",
     },
   },
   {
-    title: { pt: "Liderança", en: "Leadership" },
+    title: { en: "Leadership" },
     description: {
-      pt: "Desenvolvemos líderes capazes de transformar o mundo",
       en: "We develop leaders capable of transforming the world",
     },
   },
@@ -155,13 +169,13 @@ export default function AboutPage() {
                 To foster leadership, promote ethical standards, and improve the community through the power of service.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Founded in 2023, we have been dedicated to making a positive impact through various community projects
+                Founded in 2021, we have been dedicated to making a positive impact through various community projects
                 and initiatives.
               </p>
             </div>
             <div className="animate-fade-in-right">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/about-pic.jpg"
                 alt="Rotaract Mission"
                 width={600}
                 height={400}
