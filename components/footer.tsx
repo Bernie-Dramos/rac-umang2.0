@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react"
 
 export function Footer() {
@@ -25,10 +26,15 @@ export function Footer() {
           {/* Logo and Description */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gold-500 rounded-full flex items-center justify-center">
-                <span className="text-navy-900 font-bold text-lg">R</span>
-              </div>
-              <span className="font-bold text-xl">Rotaract Club of Umang Nasik</span>
+              <Image
+                src="/images/rotary-logo.png"
+                alt="Rotaract Club Logo"
+                width={40}
+                height={40}
+                className="rounded-full bg-white p-1"
+                priority
+              />
+              <span className="font-bold text-xl">Rotaract Club of Umang Nashik</span>
             </Link>
             <p className="text-gray-300 mb-6 max-w-md">
               Youth organization dedicated to community service, leadership development and building a better world.
@@ -70,18 +76,18 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-gold-400" />
-                <span className="text-gray-300">rotaract@example.com</span>
+                <span className="text-gray-300">racumang22@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-gold-400" />
-                <span className="text-gray-300">+258 84 123 4567</span>
+                <span className="text-gray-300">+91 12345 67890</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-gold-400 mt-1" />
                 <span className="text-gray-300">
-                  Av. Julius Nyerere, 123
+                  Nashik
                   <br />
-                  Maputo, Moçambique
+                  Maharashtra, India
                 </span>
               </div>
             </div>
@@ -90,7 +96,7 @@ export function Footer() {
 
         <div className="border-t border-navy-700 mt-8 pt-8 text-center">
           <p className="text-gray-300">
-            &copy; {new Date().getFullYear()} Rotaract Club of Umang Nasik. All rights reserved.
+            &copy; {new Date().getFullYear()} Rotaract Club of Umang Nashik. All rights reserved.
           </p>
         </div>
       </div>

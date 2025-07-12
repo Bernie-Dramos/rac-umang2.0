@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 
 export function Header() {
@@ -19,7 +20,7 @@ export function Header() {
     { name: "Contact", href: "/contact" },
   ]
 
-  const isActive = (href) => pathname === href
+  const isActive = (href: string) => pathname === href
 
   return (
     <header className="sticky top-0 z-50 bg-navy-900 text-white shadow-lg">
@@ -27,10 +28,15 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gold-500 rounded-full flex items-center justify-center">
-              <span className="text-navy-900 font-bold text-lg">R</span>
-            </div>
-            <span className="font-bold text-xl hidden sm:block">Rotaract Club of Umang Nasik</span>
+            <Image
+              src="/images/rotary-logo.png"
+              alt="Rotaract Club Logo"
+              width={40}
+              height={40}
+              className="rounded-full bg-white p-1"
+              priority
+            />
+            <span className="font-bold text-xl hidden sm:block">Rotaract Club of Umang Nashik</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -64,10 +70,15 @@ export function Header() {
               <SheetContent side="right" className="bg-navy-900 text-white border-navy-800">
                 <div className="flex flex-col space-y-6 mt-8">
                   <Link href="/" className="flex items-center space-x-2 mb-8">
-                    <div className="w-10 h-10 bg-gold-500 rounded-full flex items-center justify-center">
-                      <span className="text-navy-900 font-bold text-lg">R</span>
-                    </div>
-                    <span className="font-bold text-xl">Rotaract Club of Umang Nasik</span>
+                    <Image
+                      src="/images/rotary-logo.png"
+                      alt="Rotaract Club Logo"
+                      width={40}
+                      height={40}
+                      className="rounded-full bg-white p-1"
+                      priority
+                    />
+                    <span className="font-bold text-xl">Rotaract Club of Umang Nashik</span>
                   </Link>
 
                   {navigation.map((item) => (

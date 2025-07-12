@@ -118,7 +118,7 @@ export default function HomePage() {
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
           <div className="animate-fade-in-up">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-gold-400 bg-clip-text text-transparent">
-              Rotaract Club
+              Rotaract Club of Umang
             </h1>
             <h2 className="text-2xl md:text-4xl font-semibold mb-4 text-gold-400">Service, Community, Leadership</h2>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">

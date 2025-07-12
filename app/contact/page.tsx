@@ -40,21 +40,21 @@ export default function ContactPage() {
   const contactInfo = [
     {
       icon: Mail,
-      title: { pt: "Email", en: "Email" },
-      value: "rotaract@example.com",
-      description: { pt: "Envie-nos uma mensagem", en: "Send us a message" },
+      title: { en: "Email" },
+      value: "racumang22@gmail.com",
+      description: { en: "Send us a message" },
     },
     {
       icon: Phone,
-      title: { pt: "Telefone", en: "Phone" },
-      value: "+258 84 123 4567",
+      title: { en: "Phone" },
+      value: "+91 12345 67890",
       description: { pt: "Ligue para nós", en: "Give us a call" },
     },
     {
       icon: MapPin,
-      title: { pt: "Endereço", en: "Address" },
-      value: "Av. Julius Nyerere, 123",
-      description: { pt: "Maputo, Moçambique", en: "Maputo, Mozambique" },
+      title: { en: "Address" },
+      value: "Nashik",
+      description: { en: "Maharashtra, India" },
     },
   ]
 
@@ -73,7 +73,6 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl font-bold mb-6">Contact Us</h1>
-            <p className="text-xl opacity-90 leading-relaxed">Contact Hero Description</p>
           </div>
         </div>
       </section>
@@ -204,38 +203,6 @@ export default function ContactPage() {
                     })}
                   </div>
                 </div>
-
-                {/* Newsletter Signup */}
-                <Card className="bg-navy-50 border-navy-200">
-                  <CardHeader>
-                    <CardTitle className="text-navy-900">Newsletter</CardTitle>
-                    <CardDescription>Newsletter Description</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="flex gap-2">
-                      <Input type="email" placeholder="Enter Email" className="flex-1" />
-                      <Button className="bg-navy-900 hover:bg-navy-800">Subscribe</Button>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Map Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-navy-900 mb-4">Find Us</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">Find Us Description</p>
-          </div>
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-gray-200 rounded-lg h-96 flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-                <p className="text-gray-600">Interactive map will be loaded here</p>
               </div>
             </div>
           </div>
