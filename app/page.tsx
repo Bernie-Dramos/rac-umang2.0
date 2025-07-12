@@ -111,7 +111,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-800 to-navy-700">
-          <div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center opacity-20"></div>
+          <div className="absolute inset-0 bg-[url('/images/hero-bg.png')] bg-cover bg-center opacity-20"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-navy-900/80 to-transparent"></div>
         </div>
 
@@ -184,7 +184,7 @@ export default function HomePage() {
             </div>
             <div className="animate-fade-in-right">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/umang-team.jpg"
                 alt="Rotaract Club Team"
                 width={600}
                 height={400}
