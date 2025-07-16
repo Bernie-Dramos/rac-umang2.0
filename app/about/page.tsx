@@ -110,6 +110,16 @@ const generalBodyMembers = [
     image: "/placeholder.svg?height=200&width=200",
     description: "Active member and contributing to initiatives",
   },
+  {
+    name: "Manas",
+    image: "/placeholder.svg?height=200&width=200",
+    description: "Active member and contributing to initiatives",
+  },
+  {
+    name: "Ganesh",
+    image: "/placeholder.svg?height=200&width=200",
+    description: "Active member and contributing to initiatives",
+  },
   
 ]
 
@@ -127,14 +137,14 @@ const values = [
     },
   },
   {
-    title: { pt: "Comunidade", en: "Community" },
+    title: { en: "Community" },
     description: {
       pt: "Construímos pontes e fortalecemos laços comunitários",
       en: "We build bridges and strengthen community bonds",
     },
   },
   {
-    title: { pt: "Integridade", en: "Integrity" },
+    title: { en: "Integrity" },
     description: {
       pt: "Agimos com honestidade e transparência em tudo que fazemos",
       en: "We act with honesty and transparency in everything we do",
