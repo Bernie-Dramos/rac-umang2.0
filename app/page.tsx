@@ -17,6 +17,8 @@ const featuredProjects = [
     description: "Spreading joy and building connections through our annual Secret Santa tradition",
     image: "/images/secret-santa.jpg",
     date: "2024",
+    width: 300,
+    height: 200,
   },
   {
     id: 2,
@@ -24,6 +26,8 @@ const featuredProjects = [
     description: "A convention to showcase the artistry of African cuisines with 10+ traditional dishes",
     image: "/images/food-bazaar-poster.jpg",
     date: "2024",
+    width: 300,
+    height: 200,
   },
   {
     id: 3,
@@ -31,6 +35,8 @@ const featuredProjects = [
     description: "Supporting orphanage girls with essential sanitary products for their health and dignity",
     image: "/images/sanitary-donation.jpg",
     date: "2024",
+    width: 300,
+    height: 200,
   },
   {
     id: 4,
@@ -38,6 +44,8 @@ const featuredProjects = [
     description: "Environmental initiative collecting bottles to fund sanitary pads for girl children",
     image: "/images/bottle-collection.jpg",
     date: "2024",
+    width: 300,
+    height: 200,
   },
 ]
 
@@ -205,25 +213,27 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="relative max-w-4xl mx-auto">
-            <div className="overflow-hidden rounded-lg shadow-lg">
+          <div className="relative max-w-4xl mx-auto" style={{ height: 350 }}>
+            <div className="overflow-hidden rounded-lg shadow-lg h-full">
               <div
-                className="flex transition-transform duration-500 ease-in-out"
-                style={{ transform: `translateX(-${currentProject * 100}%)` }}
+                className="flex transition-transform duration-500 ease-in-out h-full"
+                style={{ transform: `translateX(-${currentProject * 100}%)`, height: 350 }}
               >
                 {featuredProjects.map((project, index) => (
-                  <div key={project.id} className="w-full flex-shrink-0">
-                    <Card className="border-0 shadow-none">
-                      <div className="grid md:grid-cols-2 gap-0">
-                        <div className="relative h-64 md:h-auto">
+                  <div key={project.id} className="w-full flex-shrink-0 h-full">
+                    <Card className="border-0 shadow-none h-full">
+                      <div className="grid md:grid-cols-2 gap-0 h-full">
+                        <div className="flex items-center justify-center bg-gray-100 h-full">
                           <Image
                             src={project.image || "/placeholder.svg"}
                             alt={project.title}
-                            fill
-                            className="object-cover"
+                            width={project.width}
+                            height={project.height}
+                            style={{ objectFit: "cover", width: "100%", height: 350, borderRadius: 8 }}
+                            className="shadow"
                           />
                         </div>
-                        <CardContent className="p-8 flex flex-col justify-center">
+                        <CardContent className="p-8 flex flex-col justify-center h-full">
                           <Badge className="w-fit mb-4 bg-gold-100 text-gold-800">{project.date}</Badge>
                           <CardTitle className="text-2xl text-navy-900 mb-4">{project.title}</CardTitle>
                           <CardDescription className="text-lg text-gray-600">{project.description}</CardDescription>
